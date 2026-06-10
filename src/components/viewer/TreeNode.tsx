@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { ChevronRight, ChevronDown } from 'lucide-react'
 
-type TreeValue = string | number | boolean | null | TreeValue[] | Record<string, TreeValue>
+type TreePrimitive = string | number | boolean | null
+interface TreeValueArray extends Array<TreeValue> {}
+interface TreeValueObject extends Record<string, TreeValue> {}
+type TreeValue = TreePrimitive | TreeValueArray | TreeValueObject
 
 interface Props {
   label?: string

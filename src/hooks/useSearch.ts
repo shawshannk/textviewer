@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from 'react'
+import { useEffect, useRef } from 'react'
 import { useViewerStore, sel } from '@/store/viewerStore'
 
 // Manages DOM-level search highlight within the viewer element.

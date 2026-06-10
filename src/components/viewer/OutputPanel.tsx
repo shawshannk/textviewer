@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import { Copy, Check, ChevronsDownUp, ChevronsUpDown } from 'lucide-react'
 import { useViewerStore, sel } from '@/store/viewerStore'
 import { useSearch } from '@/hooks/useSearch'
